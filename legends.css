@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body,html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: rgb(11, 6, 53);
     font-weight: bold;
