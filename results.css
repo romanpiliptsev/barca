@@ -1,0 +1,634 @@
+* {
+    /*  width и height элементов включают в себя значения полей и границ  */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(8, 4, 39);
+    overflow-x: hidden;
+}
+
+.match {
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    height: 5vw;
+    margin-bottom: 1.3vw;
+    background-color: white;
+}
+
+.bord {
+    box-shadow: 0 0 1px 0;
+}
+
+.date, .turnir, .matchday {
+    width: 12%;
+    display: flex;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+}
+
+.matchday {
+    flex-direction: column;
+}
+
+.matchday .tour {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+.matchday .stad {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 0.9vw;
+    text-align: center;
+}
+
+.date div {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.45vw;
+}
+
+.poster {
+    width: 44%;
+    display: flex;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.35vw;
+    text-shadow: 0.02vw 0 rgb(0, 0, 0);
+}
+
+.goals {
+    width: 20%;
+    display: flex;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+    flex-direction: column;
+}
+
+.ll {
+    width: 55%;
+}
+
+.cl {
+    width: 33%;
+}
+
+.logo {
+    width: 24.5%;
+    margin: 0.5vw;
+}
+
+.res {
+    font-size: 2vw;
+    color: white;
+    background-color: rgb(18, 11, 83);
+    padding: 0.2vw;
+    text-shadow: 0.04vw 0 rgb(255, 255, 255);
+}
+
+.maingoals {
+    display: flex;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.players {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1vw;
+    text-align: center;
+    margin: 5px;
+}
+
+.players span {
+    white-space: nowrap;
+}
+
+.ball {
+    width: 5%;
+}
+
+.team1, .team2 {
+    width: 35%;
+}
+
+.mainres {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+}
+
+.team1 {
+    text-align: right;
+}
+
+.team2 {
+    text-align: left;
+}
+
+.granada {
+    width: 17.5%;
+    margin: 0.9vw;
+}
+
+.cadiz {
+    width: 20.5%;
+    margin: 0.6vw;
+}
+
+.atm {
+    width: 21.5%;
+    margin: 0.6vw;
+}
+
+.alaves {
+    width: 28%;
+    margin: 0.25vw;
+}
+
+.esp {
+    width: 20%;
+    margin: 0.8vw;
+}
+
+.lastmatch {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8) ), url(https://www.fcbarcelona.com/photo-resources/2021/11/27/4f505999-67f5-4936-a81b-f553e6888995/2021-11-27-VILLARREAL-BARCELONA-28.JPG?width=1200&height=750);
+    background-size: 100%;
+    width: 98vw;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+    margin-bottom: 0.8vw;
+    padding-bottom: 7px;
+}
+
+.turnir1 {
+    display: flex;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+    margin-bottom: 1.2vw;
+}
+
+.ll1 {
+    width: 8%;
+}
+
+.logo1 {
+    width: 8%;
+    margin: 1vw;
+}
+
+.bigbarca {
+    width: 7%;
+    margin: 1.3vw;
+}
+
+.matchday1 {
+    display: flex;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+    margin-bottom: 1vw;
+}
+
+.tour1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1vw;
+    color: white;
+    margin-right: 0.2vw;
+}
+
+.stad1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    font-size: 1vw;
+    color: white;
+}
+
+.date1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.7vw;
+    color: rgb(241, 218, 8);
+}
+
+.poster1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.9vw;
+}
+
+.res1 {
+    font-size: 2.7vw;
+    background-color: rgb(16, 9, 71);
+    padding: 0.3vw;
+    text-shadow: 0.04vw 0 rgb(255, 255, 255);
+}
+
+.ball1 {
+    width: 1.5%;
+}
+
+.goals1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1vw;
+    color: white;
+}
+
+.first {
+    margin-bottom: 0.8vw;
+}
+
+.match {
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+
+.match:hover {
+    transform: scale(1.01);
+}
+
+.win:hover {
+    box-shadow: 0 0.05vw 0.95vw 0.45vw rgb(60, 255, 0);
+}
+
+.draw:hover {
+    box-shadow: 0 0.05vw 0.95vw 0.45vw rgb(238, 255, 0);
+}
+
+.lose:hover {
+    box-shadow: 0 0.05vw 1vw 0.55vw rgb(255, 17, 0);
+}
+
+.bigbarca:hover {
+    animation: rot1 2s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes rot1 {
+    20% {
+        transform: rotate(8deg);
+    }
+
+    70% {
+        transform: rotate(-8deg);
+    }
+}
+
+.logo1:hover {
+    animation: rot2 2s infinite;
+}
+
+@keyframes rot2 {
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    70% {
+        transform: rotate(8deg);
+    }
+}
+
+@media (max-width: 1050px) {
+    .tour1, .stad1, .goals1 {
+        font-size: 1.5vw;
+    }
+
+    .players {
+        font-size: 1.1vw;
+    }
+
+    .matchday .stad {
+        font-size: 1.15vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .match {
+        height: 8vw;
+    }
+
+    .ll1 {
+        width: 10%;
+    }
+
+    .logo1 {
+        width: 9.6%;
+        margin: 1.15vw;
+    }
+    
+    .bigbarca {
+        width: 8.4%;
+        margin: 1.6vw;
+    }
+
+    .poster1 {
+        font-size: 2.4vw;
+    }
+
+    .cl, .ll {
+        transform: scale(1.25);
+    }
+
+    .res1 {
+        font-size: 3.3vw;
+    }
+
+    .matchday .tour {
+        font-size: 1.7vw;
+    }
+
+    .tour1, .stad1, .goals1 {
+        font-size: 1.7vw;
+    }
+
+    .players {
+        font-size: 1.3vw;
+        margin-right: 8px;
+    }
+
+    .matchday .stad {
+        font-size: 1.3vw;
+    }
+
+    .players span {
+        white-space: normal;
+    }
+
+    .date div {
+        font-size: 1.6vw;
+    }
+
+    .ball {
+        width: 8%;
+    }
+
+    .maingoals {
+        font-size: 1.5vw;
+    }
+
+    .team1, .team2 {
+        width: 30%;
+        font-size: 1.6vw;
+    }
+
+    .mainres {
+        width: 40%;
+    }
+
+    .res {
+        font-size: 2.3vw;
+        padding: 0.5vw;
+        margin: 0.5vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .match {
+        height: 12vw;
+    }
+
+    .ll1 {
+        width: 12%;
+    }
+
+    .logo1 {
+        width: 11.52%;
+        margin: 1.15vw;
+    }
+    
+    .bigbarca {
+        width: 10.08%;
+        margin: 1.8vw;
+    }
+
+    .poster1 {
+        font-size: 2.88vw;
+    }
+
+    .cl, .ll {
+        transform: scale(1.5);
+    }
+
+    .res1 {
+        font-size: 3.96vw;
+    }
+
+    .matchday .tour {
+        font-size: 2.04vw;
+    }
+
+    .tour1, .stad1, .goals1 {
+        font-size: 2.04vw;
+    }
+
+    .players {
+        font-size: 1.7vw;
+        margin-right: 12px;
+    }
+
+    .matchday .stad {
+        font-size: 1.65vw;
+    }
+
+    .date div {
+        font-size: 1.92vw;
+    }
+
+    .ball {
+        width: 9.6%;
+    }
+
+    .maingoals {
+        font-size: 2.16vw;
+    }
+
+    .team1, .team2 {
+        width: 27%;
+        font-size: 1.92vw;
+        text-align: center;
+    }
+
+    .mainres {
+        width: 46%;
+    }
+
+    .res {
+        font-size: 2.76vw;
+        padding: 0.5vw;
+        margin: 0.8vw;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .hidden {
+        display: flex;
+    }
+
+    .date {
+        width: 9.5%;
+    }
+
+    .matchday {
+        padding-top: 4px;
+        width: 15%;
+    }
+
+    .turnir {
+        display: none;
+    }
+
+    .poster {
+        width: 51%;
+    }
+
+    .goals {
+        width: 24.5%;
+    }
+
+    .match {
+        height: 18vw;
+    }
+
+    .cl, .ll {
+        transform: scale(1.5);
+        margin-bottom: 15px;
+    }
+
+    .matchday .tour {
+        font-size: 2.6vw;
+    }
+
+    .matchday .stad {
+        font-size: 2.1vw;
+    }
+
+    .ball {
+        width: 9.6%;
+    }
+
+    .maingoals {
+        font-size: 2.45vw;
+    }
+
+    .date div {
+        font-size: 2.4vw;
+        text-align: center;
+    }
+
+    .players {
+        font-size: 2.1vw;
+        margin-right: 14px;
+    }
+
+    .team1, .team2 {
+        width: 27%;
+        font-size: 2.45vw;
+    }
+
+    .mainres {
+        width: 46%;
+    }
+
+    .res {
+        font-size: 3.3vw;
+        padding: 0.5vw;
+        margin: 0.8vw;
+        white-space: nowrap;
+    }
+
+    .ll1 {
+        width: 16%;
+    }
+
+    .logo1 {
+        width: 14%;
+    }
+    
+    .bigbarca {
+        width: 12.6%;
+    }
+
+    .poster1 {
+        font-size: 3.5vw;
+    }
+
+    .res1 {
+        font-size: 4.8vw;
+    }
+
+    .tour1, .stad1, .goals1 {
+        font-size: 2.5vw;
+    }
+
+    .date1 {
+        font-size: 2.3vw;
+    }
+
+    .ball1 {
+        width: 2.2%;
+    }
+
+    .win:hover {
+        box-shadow: 0 0.06vw 1.1vw 0.6vw rgb(60, 255, 0);
+    }
+    
+    .draw:hover {
+        box-shadow: 0 0.06vw 1.1vw 0.6vw rgb(238, 255, 0);
+    }
+    
+    .lose:hover {
+        box-shadow: 0 0.06vw 1.15vw 0.7vw rgb(255, 17, 0);
+    }
+}
+
+@media (max-width: 560px) and (max-height: 700px) {
+    .lastmatch {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 1000px) {
+    .lastmatch {
+        min-height: 265px;
+    }
+}
+
+@media (min-width: 490px) and (max-width: 999px) {
+    .lastmatch {
+        min-height: 215px;
+    }
+}
+
+@media (max-width: 489px) {
+    .lastmatch {
+        min-height: 205px;
+    }
+
+    .lastmatch {
+        max-height: 250px;
+    }
+}

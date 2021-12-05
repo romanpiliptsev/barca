@@ -1,0 +1,300 @@
+* {
+    /*  width и height элементов включают в себя значения полей и границ  */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(11, 6, 53);
+}
+
+.bord {
+    border: solid rgb(11, 6, 53) 5px;
+}
+
+.player {
+    width: 25%;
+    height: 23vw;
+    float: left;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    overflow: hidden;
+    background-position: top;
+}
+
+.desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(240, 230, 230);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: flex-end;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.pos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 1.8vw;
+    font-size: 1vw;
+    font-weight: bold;
+    border-bottom: solid rgb(173, 172, 172) 0.5px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: -28%;
+    transition-delay: 0.15s;
+    transition-property: all;
+    transition-duration: 0.15s;
+}
+
+.player:hover .stat {
+    margin-bottom: 0;
+}
+
+.stat div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.stat1 div {
+    text-align: center;
+}
+
+.param {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.num {
+    font-size: 1.7vw;
+    font-weight: bold;
+}
+
+.season {
+    font-size: 0.8vw;
+    font-weight: bold;
+    color: rgb(156, 156, 156);
+}
+
+.seasonnum {
+    font-weight: bold;
+    font-size: 1vw;
+    color: rgb(179, 164, 32);
+}
+
+.stegen {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/11/09/e00e0d35-ca10-412d-a505-ebec04a12d82/mini_1200x750-ter_stegen.png?width=840&height=525);
+}
+
+.dest {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/d8dd9886-d88b-49f5-9a12-1e3be2cbe831/mini_1200x750-dest.png?width=1200&height=750);
+}
+
+.pique {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/8af3a345-9112-413a-965a-9117abc14388/mini_1200x750-03-PIQUE.png?width=840&height=525);
+}
+
+.araujo {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/c20782ff-072a-470d-87f9-e154c2446135/mini_1200x750-araujo.png?width=840&height=525);
+}
+
+.busquets {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/39bfe523-8ab4-453e-88e8-a55386ecdaa8/mini_1200x750-sergio.png?width=840&height=525);
+}
+
+.puig {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/11/09/b8103632-f513-41d2-85af-675c0240739a/mini_1200x750-riqui.png?width=840&height=525);
+}
+
+.depay {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/511f37c7-c98f-4467-8ccc-1c96bef0f65a/mini_1200x750-depay.png?width=840&height=525);
+}
+
+.fati {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/11/09/a875b803-bf52-4a6b-83bf-0bf7d0c9fbe1/mini_1200x750-ansu.png?width=840&height=525);
+}
+
+.dembele {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/64509169-5858-4b44-9963-d1911fb0357d/mini_1200x750-dembele.png?width=840&height=525);
+}
+
+.martin {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/08ef0f53-53dc-40ec-924a-162651f1bab9/mini_1200x750-braithwaite.png?width=840&height=525);
+}
+
+.neto {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/aae47baa-57b5-4912-b236-26380ede4f63/mini_1200x750-neto.png?width=840&height=525);
+}
+
+.coutinho {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/11/09/819564f4-1e18-490a-9096-162dce5a0718/mini_1200x750-coutinho.png?width=840&height=525);
+}
+
+.lenglet {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/0e48c4b3-a165-4613-aedb-f034f7cbe974/mini_1200x750-lenglet.png?width=840&height=525);
+}
+
+.pedri {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/f2d9a3bc-547d-4d04-8570-ed28ef73eb63/mini_1200x750-pedri.png?width=840&height=525);
+}
+
+.luuk {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/11/09/08fbadb6-7098-4719-a174-3e0d8167dc15/Luuk-de-Jong.jpg?width=840&height=525);
+}
+
+.alba {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/3fa3a09b-c46e-4c5f-b537-fd85a551b034/mini_1200x750-jordi_alba.png?width=840&height=525);
+}
+
+.aguero {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/11/09/0da34aca-aa5c-4e58-8b33-f1a41bdea0de/mini_1200x750-kun.png?width=840&height=525);
+}
+
+.roberto {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/114f0935-a783-456f-8ab8-460f94dfdfbb/mini_1200x750-sergi_roberto.png?width=840&height=525);
+}
+
+.dejong {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/0b5fa79f-3bd1-47b7-a204-d9f74d2f8bc6/mini_1200x750-DE_JONG.png?width=840&height=525);
+}
+
+.umtiti {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/84ca6745-a237-4e8e-a987-f8a66941bdd5/mini_1200x750-umtiti.png?width=840&height=525);
+}
+
+.garcia {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/08/17/83a856f7-5bf7-41d1-853c-0ff35712916f/mini_1200x750-eric.png?width=840&height=525);
+}
+
+.pena {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/09/01/09de531a-8acd-41d3-a09e-70c1790d521f/mini_1200x750-inaki_pena.png?width=840&height=525);
+}
+
+.demir {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/11/09/2f4d2362-34bc-467d-ad13-530339592654/mini_1200x750-DEMIR.png?width=840&height=525);
+}
+
+.mingueza {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://www.fcbarcelona.com/photo-resources/2021/09/01/026b4b92-78e2-4811-ad91-20b323035568/mini_1200x750-mingueza.png?width=840&height=525);
+}
+
+@media (max-width: 1050px) {
+    .player {
+        width: 33.333%;
+        height: 30.6vw;
+    }
+
+    .stat {
+        margin-bottom: -24%;
+    }
+
+    .name {
+        font-size: 2.1vw;
+    }
+    
+    .pos {
+        font-size: 1.3vw;
+    }
+
+    .param {
+        font-size: 1.3vw;
+    }
+    
+    .num {
+        font-size: 2vw;
+    }
+    
+    .season {
+        font-size: 1.1vw;
+    }
+    
+    .seasonnum {
+        font-size: 1.3vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .player {
+        width: 50%;
+        height: 46vw;
+    }
+
+    .stat {
+        margin-bottom: -23.5%;
+    }
+
+    .name {
+        font-size: 3.15vw;
+    }
+    
+    .pos {
+        font-size: 1.95vw;
+    }
+
+    .param {
+        font-size: 1.95vw;
+    }
+    
+    .num {
+        font-size: 3vw;
+    }
+    
+    .season {
+        font-size: 1.65vw;
+    }
+    
+    .seasonnum {
+        font-size: 1.95vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .stat {
+        margin-bottom: -27%;
+    }
+
+    .name {
+        font-size: 3.465vw;
+    }
+    
+    .pos {
+        font-size: 2.34vw;
+    }
+
+    .param {
+        font-size: 2.2vw;
+    }
+    
+    .num {
+        font-size: 3.6vw;
+    }
+    
+    .season {
+        font-size: 1.88vw;
+    }
+    
+    .seasonnum {
+        font-size: 2.4vw;
+    }
+}

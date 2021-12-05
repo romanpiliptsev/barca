@@ -1,0 +1,8 @@
+body.fade{
+    opacity: 0;
+}
+
+body.appear{
+    opacity: 1;
+    transition: opacity 1s;
+}

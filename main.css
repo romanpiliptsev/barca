@@ -1,0 +1,638 @@
+* {
+    /*  width и height элементов включают в себя значения полей и границ  */
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(11, 6, 53);
+}
+
+.shapka {
+    display: flex;
+    flex-direction: row;
+    height: 160px;
+    width: 100%;
+    min-height: 120px;
+    height: 21%;
+}
+
+.bord {
+    border-style: solid;
+}
+
+.fcb {
+    color: white;
+    font-weight: bold;
+    font-family: 'Ultra', sans-serif;  
+    font-size: 33px;
+    line-height: 38px;
+    text-transform: uppercase;
+    text-shadow: 0 2px rgb(9, 106, 185), 0 3px #777;
+    /* 2.1 0.15 */
+}
+
+.barcalogo {
+    width: 90%;
+}
+
+.logohome {
+    width: 33%;
+    display: flex;
+    align-items: flex-end; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+}
+
+.fcbhome {
+    padding-right: 1.1vw;
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+}
+
+.soc {
+   margin-left: 3px;
+   font-family: 'Tenor Sans', sans-serif;
+   font-size: 13px;
+   text-transform: uppercase;
+   color: white;
+   font-weight: bold;
+   white-space: nowrap;
+}
+
+.shapka1 {
+    width: 31%;
+    display: flex;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+}
+
+.shapka2 {
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+.shapka3 {
+    width: 12%;
+}
+
+.shapka2_soc {
+    height: 50%;
+    display: grid;
+    grid-gap: 10px; /* определяет расстояние между строками и столбцами в макете */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: solid;
+}
+
+.shapka2_sections {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.shapka_section {
+    width: 25%;
+    display: flex;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.ss1, .ss2, .ss3 {
+    border-right: solid black;
+}
+
+.main_soc {
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+}
+
+.shapka3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff; /* Цвет посещенных ссылок */
+}
+
+a:hover {
+    color: #ff0000; /* Цвет посещенных ссылок */
+}
+
+a div:hover {
+    color: #2600ff;
+}
+
+.middle {
+    height: 69%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sponsors {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+}
+
+.middle1 {
+    width: 31%;
+    border-right: solid black;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://the18.com/sites/default/files/styles/featured_mobile__621x709_/public/feature-images/GettyImages-1337070726.jpg?itok=zk5llctm);
+}
+
+.middle2 {
+    width: 44%;
+    border-right: solid black;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://isport.ua/i/54/58/01/2/5458012/image_main/45a69d44f347e19da048ed135acebae2-quality_70Xresize_1Xallow_enlarge_0Xw_835Xh_0.jpg);
+}
+
+.middle3 {
+    width: 26%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,2)), url(https://cdn-wp.thesportsrush.com/2019/08/GettyImages-1170165496.jpg);
+    background-position: top;
+}
+
+.middle1, .middle2, .middle3 {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(240, 230, 230);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    justify-content: flex-end;
+    font-size: 23px;
+    background-position: top;
+}
+
+.img1 {
+    filter: brightness(65%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+
+.depay {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.mini {
+    font-size: 13px;
+}
+
+.sponsors div {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center; /* центрирование по побочной оси */
+    justify-content: center; /* центрирование по главной оси */
+}
+
+.middle1:hover {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url(https://the18.com/sites/default/files/styles/featured_mobile__621x709_/public/feature-images/GettyImages-1337070726.jpg?itok=zk5llctm);
+}
+
+.middle2:hover {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9) ), url(https://isport.ua/i/54/58/01/2/5458012/image_main/45a69d44f347e19da048ed135acebae2-quality_70Xresize_1Xallow_enlarge_0Xw_835Xh_0.jpg);
+}
+
+.middle3:hover {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9) ), url(https://cdn-wp.thesportsrush.com/2019/08/GettyImages-1170165496.jpg);
+}
+
+.middle2:hover {
+    background-color: black;
+}
+
+.middle3:hover {
+    background-color: black;
+}
+
+.middle div:hover div {
+    transition-property: all;
+    transition-duration: 0.2s;
+    font-size: 29.5px;
+}
+
+.middle div:hover .mini {
+    transition-property: all;
+    transition-duration: 0.2s;
+    font-size: 17.5px;
+}
+
+.barcalogo {
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.barcalogo:hover {
+    transform: scale(1.07);
+}
+
+.middlehidden {
+    display: none;
+}
+
+@media (max-width: 1250px) {
+    .middle div {
+        font-size: 20px;
+    }
+
+    .middle .mini {
+        font-size: 11px;
+    }
+
+    .middle div:hover div {
+        font-size: 23px;
+    }
+    
+    .middle div:hover .mini {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .fcb {
+        font-size: 28px;
+    }
+
+    .soc {
+        font-size: 12px;
+    }
+
+    .shapka_section {
+        font-size: 13px;
+    }
+
+    .shapka3 {
+        font-size: 26px;
+    }
+
+    .main_soc img {
+        transform: scale(0.8)
+    }
+}
+
+@media (max-width: 1050px) {
+    .middle div {
+        font-size: 17px;
+    }
+
+    .middle .mini {
+        font-size: 10px;
+    }
+
+    .middle div:hover div {
+        font-size: 19px;
+    }
+    
+    .middle div:hover .mini {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 950px) {
+    .shapka1 {
+        flex-direction: column;
+    }
+
+    .fcbhome {
+        flex-direction: row;
+    }
+
+    .fcb1 {
+        padding-right: 8px;
+    }
+
+    .mini span {
+        display: none;
+    }
+
+    .main_soc img {
+        width: 30px;
+    }
+
+    .main_soc .yt {
+        width: 48px;
+    }
+
+    .middle {
+        height: 80%;
+    }
+
+    .sponsors {
+        height: 8%;
+    }
+
+    a img {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 900px) {
+    .shapka3 {
+        display: none;
+    }
+
+    .shapka2 {
+        width: 69%;
+    }
+
+    .middle div div {
+        text-align: center;
+    }
+
+    .middle3 {
+        display: none;
+    }
+
+    .middle1 {
+        width: 41%;
+    }
+
+    .middle2 {
+        width: 59%;
+    }
+
+    .middle div {
+        font-size: 23px;
+    }
+
+    .middle .mini {
+        font-size: 13px;
+    }
+
+    .middle div:hover div {
+        font-size: 25px;
+    }
+    
+    .middle div:hover .mini {
+        font-size: 15px;
+    }
+
+    .fcb {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 750px) {
+    .main_soc img {
+        transform: scale(0.6)
+    }
+
+    .soc {
+        margin-left: 0;
+    }
+
+    .main_soc {
+        padding-right: 0;
+    }
+
+    .soc {
+        font-size: 10px;
+    }
+
+    .shapka_section {
+        font-size: 11px;
+    }
+
+    .fcb {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 700px) {
+    .middle {
+        display: block;
+    }
+
+    .middlehidden {
+        display: flex;
+    }
+
+    .middle div {
+        float: left;
+    }
+
+    .middle1, .middlehidden {
+        width: 50%;
+        height: 60%;
+    }
+
+    .middle2 {
+        width: 100%;
+        height: 40%;
+    }
+
+    .middle div {
+        font-size: 19px;
+    }
+
+    .middle .mini {
+        font-size: 10px;
+    }
+
+    .middle div:hover div {
+        font-size: 21px;
+    }
+    
+    .middle div:hover .mini {
+        font-size: 12px;
+    }
+
+    .fcb {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 650px) {
+    .shapka2_soc {
+        grid-gap: 0px;
+    }
+
+    .soc {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .fcbhome {
+        flex-direction: column;
+        height: 52%;
+    }
+
+    .fcb, .fcb1 {
+        padding-right: 0;
+        line-height: 24px;
+    }
+
+    .logohome {
+        height: 48%;
+    }
+}
+
+@media (max-width: 600px) {
+    .barcalogo {
+        transform: scale(1.1);
+    }
+
+    .barcalogo:hover {
+        transform: scale(1.2);
+    }
+
+    .main_soc img {
+        width: 22px;
+    }
+
+    .main_soc .yt {
+        width: 33px;
+    }
+}
+
+@media (max-height: 700px) {
+    .shapka3 {
+        font-size: 24px;
+    }
+
+    .barcalogo {
+        transform: scale(0.85);
+    }
+
+    .barcalogo:hover {
+        transform: scale(0.95);
+    }
+}
+
+@media (max-height: 600px) {
+    a img {
+        transform: scale(0.6);
+    }
+
+    .middle div {
+        font-size: 17px;
+    }
+
+    .middle .mini {
+        font-size: 9px;
+    }
+
+    .middle div:hover div {
+        font-size: 19px;
+    }
+    
+    .middle div:hover .mini {
+        font-size: 11px;
+    }
+
+    .barcalogo:hover {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-height: 600px) and (min-width: 1151px) {
+    .main_soc img {
+        transform: scale(0.85);
+    }
+}
+
+@media (max-height: 500px) and (max-width: 700px) {
+    .middle {
+        height: 73%;
+    }
+
+    .sponsors {
+        height: 15%;
+    }
+
+    .middle2 {
+        display: none;
+    }
+
+    .middle1, .middlehidden {
+        height: 100%;
+    }
+
+    .middle div {
+        font-size: 15px;
+    }
+
+    .middle .mini {
+        font-size: 8px;
+    }
+
+    .middle div:hover div {
+        font-size: 17px;
+    }
+    
+    .middle div:hover .mini {
+        font-size: 10px;
+    }
+}
+
+@media (max-height: 300px) {
+    .sponsors {
+        display: none;
+    }
+}
+
+@media (max-height: 250px) {
+    .middle div {
+        font-size: 0;
+    }
+
+    .middle .mini {
+        font-size: 0;
+    }
+
+    .middle div:hover div {
+        font-size: 0;
+    }
+    
+    .middle div:hover .mini {
+        font-size: 0;
+    }
+}
